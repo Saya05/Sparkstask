@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+.nav-container {
+  width: 100%;
+  height: 80px;
+  background: #311717;
+  border: #a89494a2 1px solid;
+  position: fixed;
+  z-index: 5;
+}
+.navbar {
+  display: flex;
+  position: static;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+}
+.nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.navlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 100px;
+  padding: 0 15px;
+}
+.nav-link {
+  padding-left: 40px;
+  list-style: none;
+}
+.nav-link a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 30px;
+  width: 50px;
+  font-weight: bold;
+}
+.nav-link a:hover {
+  border-bottom: 5px solid #f1f1f1;
+  /* transform: scale(1.5); */
+  transition: all 0.3s ease-in;
+}
+.active{
+  color: aqua;
+}
+.content {
+  background: linear-gradient(rgba(32, 13, 13, 0.6), rgba(26, 10, 7, 0.9)),
+    url("./images/hands.jpg") center center/cover no-repeat;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  border-bottom: #a89494a2 1px solid;
+  /* padding-top:250px; */
+}
+.content .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heading .mainhd {
+  padding-bottom: 20px;
+  color: #f1f1f1;
+  font-size: 100px;
+}
+button h1 {
+  justify-self: center;
+  align-self: center;
+  padding-top: 5px;
+  font-size: 20px;
+}
+.about {
+  width: 100%;
+  height: 60vh;
+  background: #582525;
+}
+.about-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-content img {
+  width: 550px;
+  height: 400px;
+  margin-right: 45px;
+  box-shadow: #222020 10px 10px 10px;
+}
+.about-content .contentpart {
+  width: 550px;
+  height: 400px;
+  text-align: center;
+  background: #a89494a2;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: #222020 10px 10px 10px;
+}
+.contentpart h1 {
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+.contentpart p {
+  font-size: 25px;
+}

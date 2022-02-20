@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Give Life</title>
+  </head>
+  <body>
+    <!-- <script>
+      const addactive=()=>
+      { ele=document.querySelector('.navlist').querySelectorAll('li')
+      console.log(ele[0]);
+        ele.forEach(n=>n.classList.remove('active'));
+        ele.classList.add('active')
+      }
+    </script> -->
+    <div class="nav-container">
+      <div class="navbar">
+        <nav class="nav">
+          <ul class="navlist">
+            <li class="nav-link"><a href="#top">Home</a></li>
+            <li class="nav-link">
+              <a href="#about" onclick="addactive()">About</a>
+            </li>
+            <li class="nav-link"><a href="#top">Donate</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="content" id="top">
+      <div class="heading">
+        <h1 class="mainhd">Save a Life</h1>
+        <div class="button">
+          <form>
+            <script
+              src="https://checkout.razorpay.com/v1/payment-button.js"
+              data-payment_button_id="pl_IyAmXfkef7X4ew"
+              async
+            ></script>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="about" id="about">
+      <div class="about-content">
+        <img src="./images/life2.jpg" alt="" />
+        <div class="contentpart">
+          <h1>GIVE LIFE</h1>
+          <p>
+            Give life is a non-profit organisation working to provide Education
+            to kids who cant provide for themselves.
+            <br />
+            We work here so that this poor litle kids could get education and
+            make their future.
+            <br />
+            Join us in making their life beautiful by donating for this cause.
+            <br />
+            Your small help can save a life.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
